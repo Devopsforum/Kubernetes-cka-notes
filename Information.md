@@ -90,3 +90,6 @@ https://hackr.io/blog/best-docker-certification
 https://www.youtube.com/watch?v=wECc7RPAr7s&ab_channel=ProgrammingHero
 
 Kube Cheat Sheet - https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+=================================================Start From Here=======================================================
+https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/kubernetes-architecture/introduction
