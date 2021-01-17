@@ -1,0 +1,17 @@
+kubectl run <name> --image=<image-that-needs-to-be-pulled-from-dockerHub> -- to create a pod.
+kubectl run <name> --image=<image-that-needs-to-be-pulled-from-dockerHub> --dry-run=client -o yaml> pod-definition.yml --> this will create the definition file with the 
+reuired values.
+
+
+kubectl create -f pod-definition.yml --> creating hte pod using the definition file(updating the vlaues required)
+
+kubectl get pods -o wide ---> To see which nodes the pods are got placed
+
+kubectl describe pod <pod-name> | grep -i image --> to see the image that the POD/Container is using.
+
+kubectl get pods --> gives the details of running containers in the ready column(total running containers/total containers in the pod)
+
+kubectl delete pod <pod-name> --> to delete the pod
+
+kubectl edit pod <pod-name> --> to edit the vlaues of the running pod
+kubectl apply -f <pod-def-file-location> --> to apply the changes that we make for the pod thats created already.
