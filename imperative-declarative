@@ -1,0 +1,21 @@
+Imperative: 
+
+Create Objects:
+kubectl run --image=nginx nginx --> creating the Nginx POD with image as nginx and name as Nginx
+kubectl create deployment --image=nginx nginx --> creating deployment using the image as nginx  and name as nginx
+kubectl expose deployment nginx --port 80 --> creating hte service with port 80
+
+Update Objects
+kubectl edit deployment nginx --> editing the existing deployment named nginx 
+kubectl scale deployment nginx --replicas=5 --> scaling the deployment iwht 5 replicas
+kubectl set image deployment nginx nginx=nginx:1.18 --> updating the deployment for updating hte nginx service with version
+
+kubectl create -f nginx.yml --> creating the pod using the definition file
+kubectl replace -f nginx.yml --> updating the created image with the updated yaml config file
+kubectl delete -f nginx.yml --> delete the nginx created POD.
+
+Declarative: 
+
+Create Objects:
+kubectl apply -f nginx.yml --> creates the nigix definition file 
+
